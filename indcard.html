@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 19px;
+        }
+
+        #amount{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(204, 164, 241);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right:20px ;
+            padding-left: 20px;
+        }
+
+        #leftBox{
+            /* width: fit-content; */
+            height: 100%;
+            display: flex;
+            gap:15px;
+            align-items: center;
+        }
+
+        .imgBox{
+            width: 2rem;
+            height: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #payment{
+            width: 80%;
+            height: 9%;
+            background-color: rgb(114, 255, 199);
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
+        }
+        .cancel a{
+            text-decoration: none;
+            color: rgb(66, 66, 66);
+            font-weight: bold;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <img src="tech.jfif" alt="tech image">
+            
+            <div class="textbox">
+                <h2>Tech Domain</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, repudiandae.</p>
+            </div>
+
+            <div id="amount">
+                <div id="leftBox">
+                    <div class="imgBox">
+                        <img 
+                            src="favicon.png" 
+                        />     
+                    </div>
+                    <div class="amountBox">
+                        <p>Amount</p>
+                        <p>$99.99/year</p>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <a href="#">Change</a>
+                </div>
+
+            </div>
+
+            <button id="payment">
+                Procee to payment
+            </button>
+
+            <div class="cancel">
+                <a href="#">Leave Domain</a>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
