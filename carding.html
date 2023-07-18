@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carding</title>
+</head>
+<style>
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 600px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .textbox{
+        width: 50%;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        padding: 10px;
+    
+    }
+    #heading h1{
+        color: whitesmoke;
+    }
+
+    #paragraph{
+        color: white;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .imagebox img{
+      width: 300px;
+      height: 100%;
+    }
+
+
+
+
+</style>
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <div class ="textbox">
+
+                <div id="heading">
+                    <h1>Get insights that helps your business grow.</h1>
+                </div>
+
+                <div id="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, explicabo?</p>
+                </div>
+
+                <div class="info">
+                    <textbox>10k+ <br> <sub>Comments</sub> </textbox>
+                    <textbox> 214  <br> <sub>Paid Users</sub></textbox>
+                    <textbox>12M+<br> <sub>Views</sub></textbox>
+                </div>
+
+            </div>
+
+            <div class="imagebox">
+                <img src="cam.jpg" alt="3d render image">
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
